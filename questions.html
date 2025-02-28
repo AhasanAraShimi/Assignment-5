@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+      <!-- Tailwind CSS via CDN -->
+      <script src="https://cdn.tailwindcss.com"></script>
+
+      <!-- Google font CDN -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+
+      <style>
+        .poppins-font {
+          font-family: "Poppins", sans-serif;
+        }
+      
+          </style>     
+      
+</head>
+<body class="bg-[#F4F7FF] poppins-font">
+  <header>
+  <nav>
+  <section class="w-10/12 mx-auto flex justify-between mt-[30px] bg-white h-[80px] items-center px-3 rounded-[8px]">
+    <div class="flex items-center">
+      <div><img src="assets/logo.png" alt=""></div>
+      <h1 class="text-[35px] font-[300]">Dev<span class="font-[700]">Board</span></h1>
+    </div>
+  
+    <div><button  class="bg-[#3752FD] text-[16px] font-[500] text-white px-4 py-2 rounded-[8px]">Back to Desk</button>
+   </div>
+  </section>
+</nav>
+</header>
+
+<main>
+  <!-- Question-1 -->
+   <section class=" pb-[100px]">
+    <h1 class="text-center w-10/12 mx-auto my-[20px] text-[32px] font-[600]">Blogs</h1>
+  <section class="bg-white w-10/12 mx-auto mt-[20px] px-4 rounded-[8px]">
+    <div class=" border-b-[1px]"><h2 class="py-[20px] text-[24px] font-[500] ">Question-1: What are the different ways to select an element in the DOM?</h2></div>
+    <div><p class="py-[20px]">There are several way hs to select HTML elements in DOM.They are as follows: <br>
+      <p class="font-[500]">1.document.getElementsByTagName(' '):</p>
+      In this way, all the elements of the particular HTML tag name can be selected. For example, we can select an <h1></h1> tag by writing .getElementsByTagName('h1'), then all the h1 tags of the HTML file will be selected.
+      <br>  <br> 
+      
+      <p class="font-[500]">2.document.getElementById(''):</p>
+      In this way, a particular element can be selected by using the id of that element.this one is the most used method in the case of selecting elements.
+      <br>  <br>  
+
+      <p class="font-[500]">3.document.getElementsByClassName(' '):</p>
+      By a particular class name, all the elements under that class name can be reached. 
+      <br>  <br>  
+
+      <p class="font-[500]">4.document.querySelectorAll('#id'):</p>
+      This is another way to reach an element on the basis of id name.In this way all the child inside that particular parent element can be shown in console as childNodes. 
+      <br>  <br> 
+
+      <p class="font-[500]">5.document.querySelectorAll('.class name'):</p>
+     Another approach of selecting element on the basis of class name.In this way, all the child elements are shown as childNodes within that particular class name.
+      <br>  <br> 
+
+      <p class="font-[500]">
+        6.document.querySelector('.class / #id child name')</p>
+      when we need to get the first child of a particular parent element we can use this method.
+       <br>  <br> 
+    </p></div>
+
+  </section>
+
+  <!-- Question-2 -->
+ 
+  <section class="bg-white w-10/12 mx-auto mt-[20px] px-4 rounded-[8px]">
+    <div class=" border-b-[1px]"><h2 class="py-[20px] text-[24px] font-[500] ">Question-2: What is the difference between innerHTML, innerText, and textContent ?</h2></div>
+    <div><p class="py-[20px]">
+      
+
+
+    </p></div>
+
+  </section>
+
+
+    <!-- Question-3 -->
+    <section class="bg-white w-10/12 mx-auto mt-[20px] px-4 rounded-[8px]">
+      <div class=" border-b-[1px]"><h2 class="py-[20px] text-[24px] font-[500]] ">Question-3: What is event delegation in the DOM?</h2></div>
+      <div><p class="py-[20px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque sunt veritatis dicta quos! Minima soluta deserunt nihil. Consequuntur sunt tempora ipsum voluptatibus commodi reprehenderit quo deleniti eveniet quaerat quis. Tempore.</p></div>
+  
+    </section>
+
+
+      <!-- Question-4 -->
+  <section class="bg-white w-10/12 mx-auto mt-[20px] px-4 rounded-[8px]">
+    <div class=" border-b-[1px]"><h2 class="py-[20px] text-[24px] font-[500] ">Question-4: What is event bubbling in the DOM?</h2></div>
+    <div><p class="py-[20px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque sunt veritatis dicta quos! Minima soluta deserunt nihil. Consequuntur sunt tempora ipsum voluptatibus commodi reprehenderit quo deleniti eveniet quaerat quis. Tempore.</p></div>
+
+  </section>
+
+    <!-- Question-5 -->
+    <section class="bg-white w-10/12 mx-auto mt-[20px] px-4 rounded-[8px]">
+      <div class=" border-b-[1px]"><h2 class="py-[20px] text-[24px] font-[500] ">Question-5: How do you create, add, and remove elements using JavaScript?</h2></div>
+      <div><p class="py-[20px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque sunt veritatis dicta quos! Minima soluta deserunt nihil. Consequuntur sunt tempora ipsum voluptatibus commodi reprehenderit quo deleniti eveniet quaerat quis. Tempore.</p></div>
+  
+    </section>
+  </section>
+</main>
+
+
+</body>
+</html>
