@@ -9,4 +9,9 @@ document.getElementById("theme-btn").addEventListener("click", function() {
 });
 
 
+document.getElementById("discover").addEventListener('click' , function(event){
+event.preventDefault();
+ window.location.href="./questions.html"
+})
+
 
