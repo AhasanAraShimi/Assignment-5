@@ -10,12 +10,12 @@ document.getElementById("theme-btn").addEventListener("click", function() {
 });
 
 
-
-//Location to next page
-document.getElementById("discover").addEventListener('click' , function(event){
-event.preventDefault();
- window.location.href="./questions.html"
-})
+ //Location to next page
+ document.getElementById("discover").addEventListener('click' , function(event){
+  event.preventDefault();
+   window.location.href="./questions.html"
+  })
+  
 
 
 //Time & Date
@@ -55,29 +55,99 @@ const buttonLimits =document.getElementById("number-tobe-deducted").innerText = 
 
 
 
-const container = document.getElementById("first-section");
-const headings = container.querySelectorAll("h3");
-
-const heading = [];
-for(let heading of headings){ 
-  heading.push = heading.innerText;
- 
-
- 
-}
-
-
-
 if(buttonLimits === 0){
 alert("Congrats!!!You have completed all the current tasks")
 } 
  
-
-
 })
+  
   }
-
  document.getElementById('history').addEventListener("click" ,function(event){    
         document.getElementById('notification-container').style.display ="none" ;
 
 })
+
+
+
+
+// //Time
+const currentTime = new Date();
+let hours = currentTime.getHours();
+const minutes = currentTime.getMinutes();
+const seconds = currentTime.getSeconds();
+
+
+let period;
+if (hours >= 12) {
+  period = "PM";
+} else {
+  period = "AM";
+}
+
+
+if (hours >= 12) {
+  hours = hours % 12; 
+}
+if (hours === 0) {
+  hours = 12; // 
+}
+const timeDetails = `${hours}:${minutes}:${seconds} ${period}`; 
+
+
+
+
+const container = document.getElementById("first-section");
+const headings = container.querySelectorAll("h3");
+const heading1 = headings[0].innerText;
+const heading2 = headings[1].innerText;
+const heading3 = headings[2].innerText;
+const heading4 = headings[3].innerText;
+const heading5 = headings[4].innerText;
+const heading6 = headings[5].innerText;
+
+document.getElementById('button-1').addEventListener('click',function(event){
+  event.preventDefault();
+  const container =document.getElementById('notification-container');
+  container.innerHTML= `
+  <p class="mx-3 bg-[#F4F7FF] rounded-[8px] p-2 my-3">You have completed the task of ${heading1} at ${timeDetails}</p>`
+})
+
+
+document.getElementById('button-2').addEventListener('click',function(event){
+  event.preventDefault();
+  const container =document.getElementById('notification-container');
+  container.innerHTML += `
+  <p class="mx-3 bg-[#F4F7FF] rounded-[8px] p-2 my-3">You have completed the task of ${heading2} at ${timeDetails}</p>`
+})
+
+document.getElementById('button-3').addEventListener('click',function(event){
+  event.preventDefault();
+  const container =document.getElementById('notification-container');
+  container.innerHTML+= `
+  <p class="mx-3 bg-[#F4F7FF] rounded-[8px] p-2 my-3">You have completed the task of ${heading3} at ${timeDetails}</p>`
+})
+
+
+document.getElementById('button-4').addEventListener('click',function(event){
+  event.preventDefault();
+  const container =document.getElementById('notification-container');
+  container.innerHTML+= `
+  <p class="mx-3 bg-[#F4F7FF] rounded-[8px] p-2 my-3">You have completed the task of ${heading4} at ${timeDetails}</p>`
+})
+
+document.getElementById('button-5').addEventListener('click',function(event){
+  event.preventDefault();
+  const container =document.getElementById('notification-container');
+  container.innerHTML+= `
+  <p class="mx-3 bg-[#F4F7FF] rounded-[8px] p-2 my-3">You have completed the task of ${heading5} at ${timeDetails}</p>`
+})
+
+document.getElementById('button-6').addEventListener('click',function(event){
+  event.preventDefault();
+  const container =document.getElementById('notification-container');
+  container.innerHTML+= `
+  <p class="mx-3 bg-[#F4F7FF] rounded-[8px] p-2 my-3">You have completed the task of ${heading6} at ${timeDetails}</p>`
+})
+
+
+ 
