@@ -109,7 +109,7 @@ document.getElementById('button-1').addEventListener('click',function(event){
   event.preventDefault();
   const container =document.getElementById('notification-container');
   container.innerHTML= `
-  <p class="mx-3 bg-[#F4F7FF] rounded-[8px] p-2 my-3">You have completed the task of ${heading1} at ${timeDetails}</p>`
+  <p class="mx-3 bg-[#F4F7FF] rounded-[8px] p-2 my-6">You have completed the task ${heading1} at ${timeDetails}</p>`
 })
 
 
@@ -117,14 +117,14 @@ document.getElementById('button-2').addEventListener('click',function(event){
   event.preventDefault();
   const container =document.getElementById('notification-container');
   container.innerHTML += `
-  <p class="mx-3 bg-[#F4F7FF] rounded-[8px] p-2 my-3">You have completed the task of ${heading2} at ${timeDetails}</p>`
+  <p class="mx-3 bg-[#F4F7FF] rounded-[8px] p-2 my-6">You have completed the task ${heading2} at ${timeDetails}</p>`
 })
 
 document.getElementById('button-3').addEventListener('click',function(event){
   event.preventDefault();
   const container =document.getElementById('notification-container');
   container.innerHTML+= `
-  <p class="mx-3 bg-[#F4F7FF] rounded-[8px] p-2 my-3">You have completed the task of ${heading3} at ${timeDetails}</p>`
+  <p class="mx-3 bg-[#F4F7FF] rounded-[8px] p-2 my-6">You have completed the task ${heading3} at ${timeDetails}</p>`
 })
 
 
@@ -132,21 +132,21 @@ document.getElementById('button-4').addEventListener('click',function(event){
   event.preventDefault();
   const container =document.getElementById('notification-container');
   container.innerHTML+= `
-  <p class="mx-3 bg-[#F4F7FF] rounded-[8px] p-2 my-3">You have completed the task of ${heading4} at ${timeDetails}</p>`
+  <p class="mx-3 bg-[#F4F7FF] rounded-[8px] p-2 my-6">You have completed the task ${heading4} at ${timeDetails}</p>`
 })
 
 document.getElementById('button-5').addEventListener('click',function(event){
   event.preventDefault();
   const container =document.getElementById('notification-container');
   container.innerHTML+= `
-  <p class="mx-3 bg-[#F4F7FF] rounded-[8px] p-2 my-3">You have completed the task of ${heading5} at ${timeDetails}</p>`
+  <p class="mx-3 bg-[#F4F7FF] rounded-[8px] p-2 my-6">You have completed the task ${heading5} at ${timeDetails}</p>`
 })
 
 document.getElementById('button-6').addEventListener('click',function(event){
   event.preventDefault();
   const container =document.getElementById('notification-container');
   container.innerHTML+= `
-  <p class="mx-3 bg-[#F4F7FF] rounded-[8px] p-2 my-3">You have completed the task of ${heading6} at ${timeDetails}</p>`
+  <p class="mx-3 bg-[#F4F7FF] rounded-[8px] p-2 my-6">You have completed the task ${heading6} at ${timeDetails}</p>`
 })
 
 
