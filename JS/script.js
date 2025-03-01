@@ -11,7 +11,7 @@ document.getElementById("theme-btn").addEventListener("click", function() {
 
 
 
-//Location og next page
+//Location to next page
 document.getElementById("discover").addEventListener('click' , function(event){
 event.preventDefault();
  window.location.href="./questions.html"
@@ -53,19 +53,31 @@ const convertedNumberDeducted=parseInt(numberDeducted);
 
 const buttonLimits =document.getElementById("number-tobe-deducted").innerText = convertedNumberDeducted - 1;
 
-if(buttonLimits === 0){
-alert("Congrats!!!You have completed all the current tasks")
+
+
+const container = document.getElementById("first-section");
+const headings = container.querySelectorAll("h3");
+
+const heading = [];
+for(let heading of headings){ 
+  heading.push = heading.innerText;
+ 
+
+ 
 }
 
 
 
+if(buttonLimits === 0){
+alert("Congrats!!!You have completed all the current tasks")
+} 
+ 
 
 
-
-    
-    
-    })
+})
   }
 
+ document.getElementById('history').addEventListener("click" ,function(event){    
+        document.getElementById('notification-container').style.display ="none" ;
 
-
+})
