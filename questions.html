@@ -85,7 +85,7 @@
       <br>  <br> 
       
       <p class="font-[500]">2.innerText:</p>
-      This one only shows text inside an element, ignores tag names and comments.It doesn't show any output if the display of the parent element is hidden.
+      This one shows only text inside of an element, ignores tag names and comments.It doesn't show any output if the display of the parent element is hidden.
       <br>  <br>  
 
       <p class="font-[500]">3.textContent :</p>
@@ -98,7 +98,9 @@
     <!-- Question-3 -->
     <section class="bg-white w-10/12 mx-auto mt-[20px] px-4 rounded-[8px]">
       <div class=" border-b-[1px]"><h2 class="py-[20px] text-[24px] font-[500] ">Question-3: What is event delegation in the DOM?</h2></div>
-      <div><p class="py-[20px]"></p></div>
+      <div><p class="py-[20px]">
+        DOM event delegation is a method where a parent element works as a representative of the child elements.In this method instead of applying the event handler to every child element, it is applied to the parent element, and a particular property target is used to specify and access child elements. When we click on the targeted child element, the event applied to the parent element executes.For example, if we want to event listener to every li inside  ul, we can add event listener to ul, instead of applying it on every li.
+      </p></div>
   
     </section>
 
@@ -106,14 +108,39 @@
       <!-- Question-4 -->
   <section class="bg-white w-10/12 mx-auto mt-[20px] px-4 rounded-[8px]">
     <div class=" border-b-[1px]"><h2 class="py-[20px] text-[24px] font-[500] ">Question-4: What is event bubbling in the DOM?</h2></div>
-    <div><p class="py-[20px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque sunt veritatis dicta quos! Minima soluta deserunt nihil. Consequuntur sunt tempora ipsum voluptatibus commodi reprehenderit quo deleniti eveniet quaerat quis. Tempore.</p></div>
+    <div><p class="py-[20px]">Event bubbling is a procedure where the event handler is applied downwards, but it is executed upwards. For instance, there's a section, inside the section there is a child div and inside the child div there's a p tag. If we add an event listener on the section, div, and p tag, respectively, and click on the p tag, then we will get the output of p tag, div, and section, respectively and it continues like this until the last ancestor on which event handler is added, if there any.</p></div>
 
   </section>
 
     <!-- Question-5 -->
     <section class="bg-white w-10/12 mx-auto mt-[20px] px-4 rounded-[8px]">
       <div class=" border-b-[1px]"><h2 class="py-[20px] text-[24px] font-[500] ">Question-5: How do you create, add, and remove elements using JavaScript?</h2></div>
-      <div><p class="py-[20px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque sunt veritatis dicta quos! Minima soluta deserunt nihil. Consequuntur sunt tempora ipsum voluptatibus commodi reprehenderit quo deleniti eveniet quaerat quis. Tempore.</p></div>
+      <div><p class="py-[20px]">
+        <p class="font-[500]">1.Creating :</p>
+      To create an element we need to use document.createElement("element we need to create").
+
+
+
+<br><br>
+
+
+
+      <p class="font-[500]">2.Adding a JavaScript element:</p>
+      To add element there are some ways. <br>
+      <ul class="roman-list "></ul>
+        <li>innerHTML: When we need to add elements with tags</li>
+        <li>innerText: When we want to add only text inside an element.</li>
+        <li>appendChild(): When we want to add an element already created.It allows only one element</li>
+        <li>append(): When we want to add multiple elements already created inside an element</li>
+      </ul>
+
+
+<br><br>
+
+
+      <p class="font-[500]">3.Removing a JavaScript element:</p>
+      We need to use .remove() function to remove an element.
+      </p></div>
   
     </section>
   </section>

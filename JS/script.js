@@ -61,7 +61,8 @@ alert("Congrats!!!You have completed all the current tasks")
  
 })
   
-  }
+}
+
  document.getElementById('history').addEventListener("click" ,function(event){    
         document.getElementById('notification-container').style.display ="none" ;
 
