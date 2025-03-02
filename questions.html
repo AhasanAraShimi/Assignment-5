@@ -45,11 +45,12 @@
   <section class="bg-white w-10/12 mx-auto mt-[20px] px-4 rounded-[8px]">
     <div class=" border-b-[1px]"><h2 class="py-[20px] text-[24px] font-[500] ">Question-1: What are the different ways to select an element in the DOM?</h2></div>
     <div><p class="py-[20px]">There are several way hs to select HTML elements in DOM.They are as follows: <br>
-      <p class="font-[500]">1.document.getElementsByTagName(' '):</p>
+
+      <p class="font-[500]">1.document.getElementsByTagName('tag name'):</p>
       In this way, all the elements of the particular HTML tag name can be selected. For example, we can select an <h1></h1> tag by writing .getElementsByTagName('h1'), then all the h1 tags of the HTML file will be selected.
       <br>  <br> 
       
-      <p class="font-[500]">2.document.getElementById(' tag name'):</p>
+      <p class="font-[500]">2.document.getElementById('id name'):</p>
       In this way, a particular element can be selected by using the id of that element.this one is the most used method in the case of selecting elements.
       <br>  <br>  
 
@@ -61,12 +62,16 @@
       This is another way to reach an element on the basis of id name.In this way all the child inside that particular parent element can be shown in console as childNodes. 
       <br>  <br> 
 
-      <p class="font-[500]">5.document.querySelectorAll('tag name'):</p>
+      <p class="font-[500]">5.document.querySelectorAll('.class name'):</p>
+      This is another way to reach an element on the basis of class name.In this way all the child inside that particular parent element can be shown in console as childNodes. 
+      <br>  <br> 
+
+      <p class="font-[500]">6.document.querySelectorAll('tag name'):</p>
      Another approach of selecting element on the basis of tag name.
       <br>  <br> 
 
       <p class="font-[500]">
-        6.document.querySelector('.class / #id child name')</p>
+        7.document.querySelector('.class / #id child name/tag name')</p>
       when we need to get the first child of a particular parent element we can use this method.
        <br>  <br> 
     </p></div>
@@ -117,7 +122,9 @@
       <div class=" border-b-[1px]"><h2 class="py-[20px] text-[24px] font-[500] ">Question-5: How do you create, add, and remove elements using JavaScript?</h2></div>
       <div><p class="py-[20px]">
         <p class="font-[500]">1.Creating :</p>
-      To create an element we need to use document.createElement("element we need to create").
+      1.To create an element we need to use document.createElement("element we need to create").For example if we want to create a p tag: <br>
+      let newElement = document.createElement('p'); <br>
+      newElement.innerText = 'Hello, World!';
 
 
 
@@ -139,7 +146,9 @@
 
 
       <p class="font-[500]">3.Removing a JavaScript element:</p>
-      We need to use .remove() function to remove an element.
+      We need to use .remove() function to remove an element.For example,
+      let element = document.getElementById('my-id'); <br>
+      element.remove(element); 
       </p></div>
   
     </section>
