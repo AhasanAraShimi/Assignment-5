@@ -122,9 +122,15 @@
       <div class=" border-b-[1px]"><h2 class="py-[20px] text-[24px] font-[500] ">Question-5: How do you create, add, and remove elements using JavaScript?</h2></div>
       <div><p class="py-[20px]">
         <p class="font-[500]">1.Creating :</p>
-      1.To create an element we need to use document.createElement("element we need to create").For example if we want to create a p tag: <br>
+      1.To create an element we need to use document.createElement("element we need to create") and then append it inside the parent element.For example if we want to create a p tag: <br>
       let newElement = document.createElement('p'); <br>
-      newElement.innerText = 'Hello, World!';
+      newElement.innerText = 'Hello, World!'; <br>
+      document.body.appendChild(newElement);
+      <br><br> 
+
+      2.Another way of creating an element is innerHTML. In this way We can create only elements but also texts inside the elements and we don't need to append anything in this case.For example, <br>
+      const container =document.getElementById('id'); <br>
+      container.innerHTML = `element and texts inside element`
 
 
 
